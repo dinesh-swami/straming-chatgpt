@@ -9,7 +9,6 @@ import { auth } from "@clerk/nextjs/server";
 import {
   convertToModelMessages,
   createIdGenerator,
-  createUIMessageStream,
   createUIMessageStreamResponse,
   streamText,
   toUIMessageStream,
