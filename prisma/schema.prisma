@@ -64,7 +64,7 @@ model Message {
   role           MessageRole
   status         MessageStatus @default(COMPLETE)
   content        String        @db.Text
-  parts          Json // 
+  parts          Json? // 
   metadata       Json?
 
   conversation Conversation @relation(fields: [conversationId], references: [id], onDelete: Cascade)
